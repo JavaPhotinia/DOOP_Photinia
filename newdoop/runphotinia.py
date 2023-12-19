@@ -1,65 +1,65 @@
 import os, sys, shutil, subprocess, time
-# BENCHMARKS = ['mall-admin','mall-search','mall-portal', 'vhr','Vblog','FEBS-auth','My-Blog','SpringBlade','ruoyi','pybbs','newbee','WebGoat8', 'jeecg','MCMS']
+BENCHMARKS = ['FEBSShiro','ForestBlog','SpringBlog','pybbs','mall-admin','mall-search','mall-portal','My-Blog','jeesite','shopizer','halo','jeecg','vhr','Vblog','SpringBlade','MCMS','WebGoat8','ruoyi','favorites-web','FEBS-auth','FEBS-system','eladmin','newbee','opsli']
 # BENCHMARKS = ['WebGoat8', 'jeecg','MCMS']
-BENCHMARKS = ['MCMS', 'SpringBlade']
+# BENCHMARKS = ['MCMS', 'SpringBlade']
 # BENCHMARKS = ['shopizer']
 # BENCHMARKS = ['My-Blog','favorites-web','WebGoat8','FEBSShiro']
 # BENCHMARKS = ['FEBSShiro','ForestBlog','SpringBlog','pybbs','mall-admin','mall-search','mall-portal','My-Blog','jeesite','halo','jeecg','vhr','Vblog','SpringBlade','MCMS','WebGoat','ruoyi','favorites-web','FEBS-auth','FEBS-system']
 BASICOPTIONS = ['-Xmx128g',]
 
 APPPATH = {
-    'FEBSShiro': '/root/0610newtest/src/FEBSShiro/',
-    'ForestBlog': '/root/0610newtest/src/ForestBlog/',
-    'SpringBlog': '/root/0610newtest/src/SpringBlog/',
-    'pybbs': '/root/0610newtest/src/pybbs/', 
-    'mall-admin': '/root/0610newtest/src/malladmin/',
-    'mall-demo': '/root/0610newtest/src/malldemo/', 
-    'mall-search': '/root/0610newtest/src/mallsearch/', 
-    'mall-portal': '/root/0610newtest/src/mallportal/', 
-    'My-Blog': '/root/0610newtest/src/MyBolg/', 
-    'jeesite': '/root/0610newtest/src/jeesite/', 
-    'shopizer': '/root/0610newtest/src/shopizer/', 
-    'halo': '/root/0610newtest/src/halo/', 
-    'jeecg': '/root/0610newtest/src/jeecg/', 
-    'vhr': '/root/0610newtest/src/vhr/', 
-    'Vblog': '/root/0610newtest/src/Vblog/', 
-    'SpringBlade': '/root/0610newtest/src/SpringBlade/', 
-    'MCMS': '/root/0610newtest/src/MCMS/', 
-    'WebGoat8': '/root/0610newtest/src/WebGoat8/', 
-    'ruoyi':'/root/0610newtest/src/ruoyi/',
-    'favorites-web':'/root/0610newtest/src/favoritesweb/',
-    'FEBS-auth':'/root/0610newtest/src/febs-auth/',
-    'FEBS-system':'/root/0610newtest/src/febs-system/',
-    'eladmin':'/root/0610newtest/src/eladmin/',
-    'newbee':'/root/0610newtest/src/newbee-mall/',
-    'opsli':'/root/0610newtest/src/opsli/'
+    'FEBSShiro': '/root/Benchmarks/src/FEBSShiro/',
+    'ForestBlog': '/root/Benchmarks/src/ForestBlog/',
+    'SpringBlog': '/root/Benchmarks/src/SpringBlog/',
+    'pybbs': '/root/Benchmarks/src/pybbs/', 
+    'mall-admin': '/root/Benchmarks/src/malladmin/',
+    'mall-demo': '/root/Benchmarks/src/malldemo/', 
+    'mall-search': '/root/Benchmarks/src/mallsearch/', 
+    'mall-portal': '/root/Benchmarks/src/mallportal/', 
+    'My-Blog': '/root/Benchmarks/src/MyBolg/', 
+    'jeesite': '/root/Benchmarks/src/jeesite/', 
+    'shopizer': '/root/Benchmarks/src/shopizer/', 
+    'halo': '/root/Benchmarks/src/halo/', 
+    'jeecg': '/root/Benchmarks/src/jeecg/', 
+    'vhr': '/root/Benchmarks/src/vhr/', 
+    'Vblog': '/root/Benchmarks/src/Vblog/', 
+    'SpringBlade': '/root/Benchmarks/src/SpringBlade/', 
+    'MCMS': '/root/Benchmarks/src/MCMS/', 
+    'WebGoat8': '/root/Benchmarks/src/WebGoat8/', 
+    'ruoyi':'/root/Benchmarks/src/ruoyi/',
+    'favorites-web':'/root/Benchmarks/src/favoritesweb/',
+    'FEBS-auth':'/root/Benchmarks/src/febs-auth/',
+    'FEBS-system':'/root/Benchmarks/src/febs-system/',
+    'eladmin':'/root/Benchmarks/src/eladmin/',
+    'newbee':'/root/Benchmarks/src/newbee-mall/',
+    'opsli':'/root/Benchmarks/src/opsli/'
 }
 
 LIBPATH = {
-    'FEBSShiro': '/root/0610newtest/libs/FEBS-Shiro/lib/',
-    'ForestBlog': '/root/0610newtest/libs/ForestBlog/lib/',
-    'SpringBlog': '/root/0610newtest/libs/SpringBlog/lib/',
-    'pybbs': '/root/0610newtest/libs/pybbs/lib/', 
-    'mall-admin': '/root/0610newtest/libs/mall-admin/lib/', 
-    'mall-search': '/root/0610newtest/libs/mall-search/lib/', 
-    'mall-portal': '/root/0610newtest/libs/mall-protal/lib/', 
-    'My-Blog': '/root/0610newtest/libs/My-Blog/lib/', 
-    'jeesite': '/root/0610newtest/libs/jeesite/lib/', 
-    'shopizer': '/root/0610newtest/libs/shopizer/lib-provided2/', 
-    'halo': '/root/0610newtest/libs/halo/lib/', 
-    'jeecg': '/root/0610newtest/libs/jeecg/lib-jeecg/', 
-    'vhr': '/root/0610newtest/libs/vhr/lib/', 
-    'Vblog': '/root/0610newtest/libs/Vblog/lib/', 
-    'SpringBlade': '/root/0610newtest/libs/SpringBlade/lib/', 
-    'MCMS': '/root/0610newtest/libs/MCMS/lib-MCMS/', 
-    'WebGoat8': '/root/0610newtest/libs/WebGoat8/lib/',
-    'ruoyi':'/root/0610newtest/libs/ruoyi/lib/',
-    'favorites-web':'/root/0610newtest/libs/favoritesweb/lib/',
-    'FEBS-auth':'/root/0610newtest/libs/febs-auth/lib/',
-    'FEBS-system':'/root/0610newtest/libs/febs-system/lib/',
-    'eladmin':'/root/0610newtest/libs/eladmin/lib/',
-    'newbee':'/root/0610newtest/libs/newbee-mall/lib/',
-    'opsli':'/root/0610newtest/libs/opsli/lib/'
+    'FEBSShiro': '/root/Benchmarks/libs/FEBS-Shiro/lib/',
+    'ForestBlog': '/root/Benchmarks/libs/ForestBlog/lib/',
+    'SpringBlog': '/root/Benchmarks/libs/SpringBlog/lib/',
+    'pybbs': '/root/Benchmarks/libs/pybbs/lib/', 
+    'mall-admin': '/root/Benchmarks/libs/mall-admin/lib/', 
+    'mall-search': '/root/Benchmarks/libs/mall-search/lib/', 
+    'mall-portal': '/root/Benchmarks/libs/mall-protal/lib/', 
+    'My-Blog': '/root/Benchmarks/libs/My-Blog/lib/', 
+    'jeesite': '/root/Benchmarks/libs/jeesite/lib/', 
+    'shopizer': '/root/Benchmarks/libs/shopizer/lib-provided2/', 
+    'halo': '/root/Benchmarks/libs/halo/lib/', 
+    'jeecg': '/root/Benchmarks/libs/jeecg/lib-jeecg/', 
+    'vhr': '/root/Benchmarks/libs/vhr/lib/', 
+    'Vblog': '/root/Benchmarks/libs/Vblog/lib/', 
+    'SpringBlade': '/root/Benchmarks/libs/SpringBlade/lib/', 
+    'MCMS': '/root/Benchmarks/libs/MCMS/lib-MCMS/', 
+    'WebGoat8': '/root/Benchmarks/libs/WebGoat8/lib/',
+    'ruoyi':'/root/Benchmarks/libs/ruoyi/lib/',
+    'favorites-web':'/root/Benchmarks/libs/favoritesweb/lib/',
+    'FEBS-auth':'/root/Benchmarks/libs/febs-auth/lib/',
+    'FEBS-system':'/root/Benchmarks/libs/febs-system/lib/',
+    'eladmin':'/root/Benchmarks/libs/eladmin/lib/',
+    'newbee':'/root/Benchmarks/libs/newbee-mall/lib/',
+    'opsli':'/root/Benchmarks/libs/opsli/lib/'
 }
 
 def runPointsToAnalysis(args):
