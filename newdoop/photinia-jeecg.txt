@@ -1,0 +1,644 @@
+nohup: ignoring input
+Starting a Gradle Daemon, 4 busy and 1 incompatible and 1 stopped Daemons could not be reused, use --status for details
+Exception in thread "DisconnectableInputStream source reader" org.gradle.api.UncheckedIOException: java.io.IOException: Bad file descriptor
+	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:61)
+	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:41)
+	at org.gradle.util.DisconnectableInputStream$1.run(DisconnectableInputStream.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Bad file descriptor
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at org.gradle.util.DisconnectableInputStream$1.run(DisconnectableInputStream.java:98)
+	... 1 more
+> Task :generators:code-processor:generateGrammarSource UP-TO-DATE
+> Task :generators:code-processor:compileJava UP-TO-DATE
+> Task :generators:code-processor:compileGroovy UP-TO-DATE
+> Task :generators:code-processor:processResources NO-SOURCE
+> Task :generators:code-processor:classes UP-TO-DATE
+> Task :generators:code-processor:jar UP-TO-DATE
+> Task :generators:fact-generator-common:compileJava UP-TO-DATE
+> Task :generators:fact-generator-common:processResources NO-SOURCE
+> Task :generators:fact-generator-common:classes UP-TO-DATE
+> Task :generators:fact-generator-common:shadowJar UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :compileGroovy UP-TO-DATE
+> Task :resolveApktool
+> Task :generators:dex-fact-generator:compileJava UP-TO-DATE
+> Task :generators:dex-fact-generator:processResources NO-SOURCE
+> Task :generators:dex-fact-generator:classes UP-TO-DATE
+> Task :generators:dex-fact-generator:jar
+> Task :generators:dex-fact-generator:fatJar
+> Task :generators:dex-fact-generator:installJar
+
+> Task :generators:soot-fact-generator:compileJava
+Note: /root/newdoop/generators/soot-fact-generator/src/main/java/org/clyze/doop/soot/Photinia/utils/FileUtil.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :generators:soot-fact-generator:compileGroovy NO-SOURCE
+> Task :generators:soot-fact-generator:processResources UP-TO-DATE
+> Task :generators:soot-fact-generator:classes
+> Task :generators:soot-fact-generator:jar
+> Task :generators:soot-fact-generator:fatJar
+> Task :generators:soot-fact-generator:installJar
+> Task :generators:wala-fact-generator:compileJava UP-TO-DATE
+> Task :generators:wala-fact-generator:processResources UP-TO-DATE
+> Task :generators:wala-fact-generator:classes UP-TO-DATE
+> Task :generators:wala-fact-generator:jar
+> Task :generators:wala-fact-generator:fatJar
+> Task :generators:wala-fact-generator:installJar
+> Task :resourceInstaller
+> Task :processResources
+> Task :classes
+> Task :writeGitCommitHash UP-TO-DATE
+
+> Task :run
+WARNING: Using custom platforms library in /root/doop-benchmarks. Unset environment variable DOOP_PLATFORMS_LIB for default platform discovery.
+Processing analysis options
+Resolving files
+Input file paths: [/root/0610newtest/src/jeecg/] -> [/root/0610newtest/src/jeecg/jeecg-boot-base-core-3.0.jar, /root/0610newtest/src/jeecg/jeecg-boot-base-tools-3.0.jar, /root/0610newtest/src/jeecg/jeecg-boot-system.jar, /root/0610newtest/src/jeecg/jeecg-system-local-api-3.0.jar]
+Library file paths: [/root/0610newtest/libs/jeecg/lib/] -> [/root/0610newtest/libs/jeecg/lib/HdrHistogram-2.1.12.jar, /root/0610newtest/libs/jeecg/lib/HikariCP-3.4.5.jar, /root/0610newtest/libs/jeecg/lib/JustAuth-1.15.7.jar, /root/0610newtest/libs/jeecg/lib/LatencyUtils-2.0.3.jar, /root/0610newtest/libs/jeecg/lib/Saxon-HE-9.8.0-4.jar, /root/0610newtest/libs/jeecg/lib/SparseBitSet-1.2.jar, /root/0610newtest/libs/jeecg/lib/alipay-sdk-java-3.1.0.jar, /root/0610newtest/libs/jeecg/lib/aliyun-java-sdk-core-4.5.10.jar, /root/0610newtest/libs/jeecg/lib/aliyun-java-sdk-dysmsapi-2.1.0.jar, /root/0610newtest/libs/jeecg/lib/aliyun-java-sdk-kms-2.11.0.jar, /root/0610newtest/libs/jeecg/lib/aliyun-java-sdk-ram-3.1.0.jar, /root/0610newtest/libs/jeecg/lib/aliyun-sdk-oss-3.11.2.jar, /root/0610newtest/libs/jeecg/lib/annotations-13.0.jar, /root/0610newtest/libs/jeecg/lib/antlr-2.7.7.jar, /root/0610newtest/libs/jeecg/lib/antlr4-runtime-4.7.jar, /root/0610newtest/libs/jeecg/lib/aspectjrt-1.9.6.jar, /root/0610newtest/libs/jeecg/lib/aspectjweaver-1.9.6.jar, /root/0610newtest/libs/jeecg/lib/autopoi-1.3.5.jar, /root/0610newtest/libs/jeecg/lib/autopoi-web-1.3.5.jar, /root/0610newtest/libs/jeecg/lib/aviator-5.2.6.jar, /root/0610newtest/libs/jeecg/lib/bcmail-jdk14-1.38.jar, /root/0610newtest/libs/jeecg/lib/bcmail-jdk14-138.jar, /root/0610newtest/libs/jeecg/lib/bcprov-jdk14-1.38.jar, /root/0610newtest/libs/jeecg/lib/bcprov-jdk14-138.jar, /root/0610newtest/libs/jeecg/lib/bctsp-jdk14-1.38.jar, /root/0610newtest/libs/jeecg/lib/byte-buddy-1.10.17.jar, /root/0610newtest/libs/jeecg/lib/checker-qual-2.11.1.jar, /root/0610newtest/libs/jeecg/lib/checkstyle-8.3.jar, /root/0610newtest/libs/jeecg/lib/classgraph-4.1.7.jar, /root/0610newtest/libs/jeecg/lib/classmate-1.5.1.jar, /root/0610newtest/libs/jeecg/lib/codegenerate-1.3.7.jar, /root/0610newtest/libs/jeecg/lib/commons-beanutils-1.9.4.jar, /root/0610newtest/libs/jeecg/lib/commons-cli-1.4.jar, /root/0610newtest/libs/jeecg/lib/commons-codec-1.14.jar, /root/0610newtest/libs/jeecg/lib/commons-collections-3.2.1.jar, /root/0610newtest/libs/jeecg/lib/commons-collections4-4.4.jar, /root/0610newtest/libs/jeecg/lib/commons-compress-1.19.jar, /root/0610newtest/libs/jeecg/lib/commons-io-2.6.jar, /root/0610newtest/libs/jeecg/lib/commons-lang-2.6.jar, /root/0610newtest/libs/jeecg/lib/commons-lang3-3.10.jar, /root/0610newtest/libs/jeecg/lib/commons-logging-1.1.1.jar, /root/0610newtest/libs/jeecg/lib/commons-math3-3.6.1.jar, /root/0610newtest/libs/jeecg/lib/commons-pool2-2.8.1.jar, /root/0610newtest/libs/jeecg/lib/core-3.3.1.jar, /root/0610newtest/libs/jeecg/lib/curvesapi-1.06.jar, /root/0610newtest/libs/jeecg/lib/dom4j-2.1.3.jar, /root/0610newtest/libs/jeecg/lib/druid-1.1.22.jar, /root/0610newtest/libs/jeecg/lib/druid-spring-boot-starter-1.1.22.jar, /root/0610newtest/libs/jeecg/lib/dynamic-datasource-spring-boot-starter-3.2.0.jar, /root/0610newtest/libs/jeecg/lib/encoder-1.2.2.jar, /root/0610newtest/libs/jeecg/lib/error_prone_annotations-2.3.4.jar, /root/0610newtest/libs/jeecg/lib/ezmorph-1.0.6.jar, /root/0610newtest/libs/jeecg/lib/failureaccess-1.0.1.jar, /root/0610newtest/libs/jeecg/lib/fastjson-1.2.78.jar, /root/0610newtest/libs/jeecg/lib/forms-7.1.2.jar, /root/0610newtest/libs/jeecg/lib/freemarker-2.3.30.jar, /root/0610newtest/libs/jeecg/lib/gson-2.8.6.jar, /root/0610newtest/libs/jeecg/lib/guava-29.0-jre.jar, /root/0610newtest/libs/jeecg/lib/hibernate-commons-annotations-5.1.0.Final.jar, /root/0610newtest/libs/jeecg/lib/hibernate-core-5.4.22.Final.jar, /root/0610newtest/libs/jeecg/lib/hibernate-re-3.0.02.jar, /root/0610newtest/libs/jeecg/lib/hibernate-validator-6.1.6.Final.jar, /root/0610newtest/libs/jeecg/lib/httpclient-4.5.13.jar, /root/0610newtest/libs/jeecg/lib/httpcore-4.4.13.jar, /root/0610newtest/libs/jeecg/lib/hutool-core-5.3.8.jar, /root/0610newtest/libs/jeecg/lib/hutool-crypto-5.3.8.jar, /root/0610newtest/libs/jeecg/lib/ini4j-0.5.4.jar, /root/0610newtest/libs/jeecg/lib/io-7.1.2.jar, /root/0610newtest/libs/jeecg/lib/istack-commons-runtime-3.0.11.jar, /root/0610newtest/libs/jeecg/lib/itext-2.1.7.jar, /root/0610newtest/libs/jeecg/lib/itext-rtf-2.1.7.jar, /root/0610newtest/libs/jeecg/lib/j2objc-annotations-1.3.jar, /root/0610newtest/libs/jeecg/lib/jackson-annotations-2.11.3.jar, /root/0610newtest/libs/jeecg/lib/jackson-core-2.11.3.jar, /root/0610newtest/libs/jeecg/lib/jackson-databind-2.11.3.jar, /root/0610newtest/libs/jeecg/lib/jackson-datatype-jdk8-2.11.3.jar, /root/0610newtest/libs/jeecg/lib/jackson-datatype-jsr310-2.11.3.jar, /root/0610newtest/libs/jeecg/lib/jackson-module-parameter-names-2.11.3.jar, /root/0610newtest/libs/jeecg/lib/jai-imageio-core-1.3.1.jar, /root/0610newtest/libs/jeecg/lib/jakarta.activation-1.2.2.jar, /root/0610newtest/libs/jeecg/lib/jakarta.activation-api-1.2.2.jar, /root/0610newtest/libs/jeecg/lib/jakarta.annotation-api-1.3.5.jar, /root/0610newtest/libs/jeecg/lib/jakarta.el-3.0.3.jar, /root/0610newtest/libs/jeecg/lib/jakarta.mail-1.6.5.jar, /root/0610newtest/libs/jeecg/lib/jakarta.validation-api-2.0.2.jar, /root/0610newtest/libs/jeecg/lib/jakarta.xml.bind-api-2.3.3.jar, /root/0610newtest/libs/jeecg/lib/jandex-2.1.3.Final.jar, /root/0610newtest/libs/jeecg/lib/java-jwt-3.11.0.jar, /root/0610newtest/libs/jeecg/lib/javase-3.3.1.jar, /root/0610newtest/libs/jeecg/lib/javassist-3.24.0-GA.jar, /root/0610newtest/libs/jeecg/lib/javax.activation-api-1.2.0.jar, /root/0610newtest/libs/jeecg/lib/javax.persistence-api-2.2.jar, /root/0610newtest/libs/jeecg/lib/jaxb-api-2.3.1.jar, /root/0610newtest/libs/jeecg/lib/jaxb-runtime-2.3.3.jar, /root/0610newtest/libs/jeecg/lib/jboss-logging-3.4.1.Final.jar, /root/0610newtest/libs/jeecg/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar, /root/0610newtest/libs/jeecg/lib/jcommander-1.72.jar, /root/0610newtest/libs/jeecg/lib/jdom-1.1.jar, /root/0610newtest/libs/jeecg/lib/jdom2-2.0.6.jar, /root/0610newtest/libs/jeecg/lib/jedis-3.3.0.jar, /root/0610newtest/libs/jeecg/lib/jeecg-boot-module-demo-3.0.jar, /root/0610newtest/libs/jeecg/lib/jeewx-api-1.4.6.jar, /root/0610newtest/libs/jeecg/lib/jettison-1.1.jar, /root/0610newtest/libs/jeecg/lib/jimureport-font-1.1.0.jar, /root/0610newtest/libs/jeecg/lib/jimureport-spring-boot-starter-1.4.0.jar, /root/0610newtest/libs/jeecg/lib/json-lib-2.4-jdk15.jar, /root/0610newtest/libs/jeecg/lib/jsqlparser-4.0.jar, /root/0610newtest/libs/jeecg/lib/jsr305-3.0.2.jar, /root/0610newtest/libs/jeecg/lib/jul-to-slf4j-1.7.30.jar, /root/0610newtest/libs/jeecg/lib/justauth-spring-boot-starter-1.3.4.jar, /root/0610newtest/libs/jeecg/lib/kernel-7.1.2.jar, /root/0610newtest/libs/jeecg/lib/knife4j-annotations-2.0.9.jar, /root/0610newtest/libs/jeecg/lib/knife4j-core-2.0.9.jar, /root/0610newtest/libs/jeecg/lib/knife4j-spring-2.0.9.jar, /root/0610newtest/libs/jeecg/lib/knife4j-spring-boot-autoconfigure-2.0.9.jar, /root/0610newtest/libs/jeecg/lib/knife4j-spring-boot-starter-2.0.9.jar, /root/0610newtest/libs/jeecg/lib/knife4j-spring-ui-2.0.9.jar, /root/0610newtest/libs/jeecg/lib/kotlin-stdlib-1.3.72.jar, /root/0610newtest/libs/jeecg/lib/kotlin-stdlib-common-1.3.72.jar, /root/0610newtest/libs/jeecg/lib/layout-7.1.2.jar, /root/0610newtest/libs/jeecg/lib/lettuce-core-5.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar, /root/0610newtest/libs/jeecg/lib/log4j-api-2.15.0.jar, /root/0610newtest/libs/jeecg/lib/log4j-to-slf4j-2.15.0.jar, /root/0610newtest/libs/jeecg/lib/logback-classic-1.2.3.jar, /root/0610newtest/libs/jeecg/lib/logback-core-1.2.3.jar, /root/0610newtest/libs/jeecg/lib/lombok-1.18.16.jar, /root/0610newtest/libs/jeecg/lib/mapstruct-1.3.1.Final.jar, /root/0610newtest/libs/jeecg/lib/mchange-commons-java-0.2.15.jar, /root/0610newtest/libs/jeecg/lib/micrometer-core-1.5.6.jar, /root/0610newtest/libs/jeecg/lib/minidao-pe-1.8.6.jar, /root/0610newtest/libs/jeecg/lib/minidao-spring-boot-starter-1.8.6.jar, /root/0610newtest/libs/jeecg/lib/minio-8.0.3.jar, /root/0610newtest/libs/jeecg/lib/mongo-java-driver-3.12.10.jar, /root/0610newtest/libs/jeecg/lib/mybatis-3.5.7.jar, /root/0610newtest/libs/jeecg/lib/mybatis-plus-3.4.3.1.jar, /root/0610newtest/libs/jeecg/lib/mybatis-plus-annotation-3.4.3.1.jar, /root/0610newtest/libs/jeecg/lib/mybatis-plus-boot-starter-3.4.3.1.jar, /root/0610newtest/libs/jeecg/lib/mybatis-plus-core-3.4.3.1.jar, /root/0610newtest/libs/jeecg/lib/mybatis-plus-extension-3.4.3.1.jar, /root/0610newtest/libs/jeecg/lib/mybatis-spring-2.0.6.jar, /root/0610newtest/libs/jeecg/lib/mysql-connector-java-8.0.22.jar, /root/0610newtest/libs/jeecg/lib/netty-buffer-4.1.53.Final.jar, /root/0610newtest/libs/jeecg/lib/netty-codec-4.1.53.Final.jar, /root/0610newtest/libs/jeecg/lib/netty-common-4.1.53.Final.jar, /root/0610newtest/libs/jeecg/lib/netty-handler-4.1.53.Final.jar, /root/0610newtest/libs/jeecg/lib/netty-resolver-4.1.53.Final.jar, /root/0610newtest/libs/jeecg/lib/netty-transport-4.1.53.Final.jar, /root/0610newtest/libs/jeecg/lib/ognl-3.2.21.jar, /root/0610newtest/libs/jeecg/lib/ojdbc6-11.2.0.3.jar, /root/0610newtest/libs/jeecg/lib/okhttp-4.4.1.jar, /root/0610newtest/libs/jeecg/lib/okio-2.4.3.jar, /root/0610newtest/libs/jeecg/lib/ooxml-schemas-1.4.jar, /root/0610newtest/libs/jeecg/lib/opentracing-api-0.33.0.jar, /root/0610newtest/libs/jeecg/lib/opentracing-noop-0.33.0.jar, /root/0610newtest/libs/jeecg/lib/opentracing-util-0.33.0.jar, /root/0610newtest/libs/jeecg/lib/org.jacoco.agent-0.8.5-runtime.jar, /root/0610newtest/libs/jeecg/lib/pdfa-7.1.2.jar, /root/0610newtest/libs/jeecg/lib/poi-4.1.2.jar, /root/0610newtest/libs/jeecg/lib/poi-ooxml-4.1.2.jar, /root/0610newtest/libs/jeecg/lib/poi-ooxml-schemas-4.1.2.jar, /root/0610newtest/libs/jeecg/lib/poi-scratchpad-4.1.2.jar, /root/0610newtest/libs/jeecg/lib/postgresql-42.2.6.jar, /root/0610newtest/libs/jeecg/lib/quartz-2.3.2.jar, /root/0610newtest/libs/jeecg/lib/reactive-streams-1.0.3.jar, /root/0610newtest/libs/jeecg/lib/reactor-core-3.3.11.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/shiro-cache-1.7.1.jar, /root/0610newtest/libs/jeecg/lib/shiro-config-core-1.7.1.jar, /root/0610newtest/libs/jeecg/lib/shiro-config-ogdl-1.7.1.jar, /root/0610newtest/libs/jeecg/lib/shiro-core-1.7.1.jar, /root/0610newtest/libs/jeecg/lib/shiro-crypto-cipher-1.7.1.jar, /root/0610newtest/libs/jeecg/lib/shiro-crypto-core-1.7.1.jar, /root/0610newtest/libs/jeecg/lib/shiro-crypto-hash-1.7.1.jar, /root/0610newtest/libs/jeecg/lib/shiro-event-1.7.1.jar, /root/0610newtest/libs/jeecg/lib/shiro-lang-1.7.1.jar, /root/0610newtest/libs/jeecg/lib/shiro-redis-3.1.0.jar, /root/0610newtest/libs/jeecg/lib/shiro-spring-1.7.1.jar, /root/0610newtest/libs/jeecg/lib/shiro-spring-boot-starter-1.7.1.jar, /root/0610newtest/libs/jeecg/lib/shiro-web-1.7.1.jar, /root/0610newtest/libs/jeecg/lib/simple-http-1.0.2.jar, /root/0610newtest/libs/jeecg/lib/simple-xml-safe-2.7.1.jar, /root/0610newtest/libs/jeecg/lib/slf4j-api-1.7.30.jar, /root/0610newtest/libs/jeecg/lib/snakeyaml-1.26.jar, /root/0610newtest/libs/jeecg/lib/spring-aop-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-beans-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-actuator-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-actuator-autoconfigure-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-autoconfigure-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-actuator-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-aop-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-data-redis-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-freemarker-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-jdbc-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-json-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-logging-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-mail-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-quartz-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-tomcat-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-validation-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-web-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-websocket-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-context-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-context-support-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-core-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-data-commons-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-data-keyvalue-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-data-redis-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-expression-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-jcl-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-jdbc-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-messaging-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-oxm-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-plugin-core-2.0.0.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-plugin-metadata-2.0.0.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-tx-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-web-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-webmvc-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-websocket-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/springfox-bean-validators-2.10.5.jar, /root/0610newtest/libs/jeecg/lib/springfox-core-2.10.5.jar, /root/0610newtest/libs/jeecg/lib/springfox-schema-2.10.5.jar, /root/0610newtest/libs/jeecg/lib/springfox-spi-2.10.5.jar, /root/0610newtest/libs/jeecg/lib/springfox-spring-web-2.10.5.jar, /root/0610newtest/libs/jeecg/lib/springfox-spring-webmvc-2.10.5.jar, /root/0610newtest/libs/jeecg/lib/springfox-swagger-common-2.10.5.jar, /root/0610newtest/libs/jeecg/lib/springfox-swagger2-2.10.5.jar, /root/0610newtest/libs/jeecg/lib/sqljdbc4-4.0.jar, /root/0610newtest/libs/jeecg/lib/stax-api-1.0.1.jar, /root/0610newtest/libs/jeecg/lib/swagger-annotations-1.5.22.jar, /root/0610newtest/libs/jeecg/lib/swagger-models-1.5.22.jar, /root/0610newtest/libs/jeecg/lib/tomcat-embed-core-9.0.39.jar, /root/0610newtest/libs/jeecg/lib/tomcat-embed-websocket-9.0.39.jar, /root/0610newtest/libs/jeecg/lib/txw2-2.3.3.jar, /root/0610newtest/libs/jeecg/lib/xercesImpl-2.9.1.jar, /root/0610newtest/libs/jeecg/lib/xml-apis-1.3.04.jar, /root/0610newtest/libs/jeecg/lib/xmlbeans-3.1.0.jar]
+Platform file paths: [/root/doop-benchmarks/JREs/jre1.8/lib/rt.jar, /root/doop-benchmarks/JREs/jre1.8/lib/jce.jar, /root/doop-benchmarks/JREs/jre1.8/lib/jsse.jar] -> [/root/doop-benchmarks/JREs/jre1.8/lib/rt.jar, /root/doop-benchmarks/JREs/jre1.8/lib/jce.jar, /root/doop-benchmarks/JREs/jre1.8/lib/jsse.jar]
+HeapDL file paths: [] -> []
+Maximum memory size: 137438953472
+No main class was found, entry points will be computed from open programs logic.
+WARNING: Handling of Java reflection is disabled!
+New context-insensitive analysis
+Id       : photiniajeecg2
+Inputs   : /root/0610newtest/src/jeecg/jeecg-boot-base-core-3.0.jar, /root/0610newtest/src/jeecg/jeecg-boot-base-tools-3.0.jar, /root/0610newtest/src/jeecg/jeecg-boot-system.jar, /root/0610newtest/src/jeecg/jeecg-system-local-api-3.0.jar
+Libraries: /root/0610newtest/libs/jeecg/lib/HdrHistogram-2.1.12.jar, /root/0610newtest/libs/jeecg/lib/HikariCP-3.4.5.jar, /root/0610newtest/libs/jeecg/lib/JustAuth-1.15.7.jar, /root/0610newtest/libs/jeecg/lib/LatencyUtils-2.0.3.jar, /root/0610newtest/libs/jeecg/lib/Saxon-HE-9.8.0-4.jar, /root/0610newtest/libs/jeecg/lib/SparseBitSet-1.2.jar, /root/0610newtest/libs/jeecg/lib/alipay-sdk-java-3.1.0.jar, /root/0610newtest/libs/jeecg/lib/aliyun-java-sdk-core-4.5.10.jar, /root/0610newtest/libs/jeecg/lib/aliyun-java-sdk-dysmsapi-2.1.0.jar, /root/0610newtest/libs/jeecg/lib/aliyun-java-sdk-kms-2.11.0.jar, /root/0610newtest/libs/jeecg/lib/aliyun-java-sdk-ram-3.1.0.jar, /root/0610newtest/libs/jeecg/lib/aliyun-sdk-oss-3.11.2.jar, /root/0610newtest/libs/jeecg/lib/annotations-13.0.jar, /root/0610newtest/libs/jeecg/lib/antlr-2.7.7.jar, /root/0610newtest/libs/jeecg/lib/antlr4-runtime-4.7.jar, /root/0610newtest/libs/jeecg/lib/aspectjrt-1.9.6.jar, /root/0610newtest/libs/jeecg/lib/aspectjweaver-1.9.6.jar, /root/0610newtest/libs/jeecg/lib/autopoi-1.3.5.jar, /root/0610newtest/libs/jeecg/lib/autopoi-web-1.3.5.jar, /root/0610newtest/libs/jeecg/lib/aviator-5.2.6.jar, /root/0610newtest/libs/jeecg/lib/bcmail-jdk14-1.38.jar, /root/0610newtest/libs/jeecg/lib/bcmail-jdk14-138.jar, /root/0610newtest/libs/jeecg/lib/bcprov-jdk14-1.38.jar, /root/0610newtest/libs/jeecg/lib/bcprov-jdk14-138.jar, /root/0610newtest/libs/jeecg/lib/bctsp-jdk14-1.38.jar, /root/0610newtest/libs/jeecg/lib/byte-buddy-1.10.17.jar, /root/0610newtest/libs/jeecg/lib/checker-qual-2.11.1.jar, /root/0610newtest/libs/jeecg/lib/checkstyle-8.3.jar, /root/0610newtest/libs/jeecg/lib/classgraph-4.1.7.jar, /root/0610newtest/libs/jeecg/lib/classmate-1.5.1.jar, /root/0610newtest/libs/jeecg/lib/codegenerate-1.3.7.jar, /root/0610newtest/libs/jeecg/lib/commons-beanutils-1.9.4.jar, /root/0610newtest/libs/jeecg/lib/commons-cli-1.4.jar, /root/0610newtest/libs/jeecg/lib/commons-codec-1.14.jar, /root/0610newtest/libs/jeecg/lib/commons-collections-3.2.1.jar, /root/0610newtest/libs/jeecg/lib/commons-collections4-4.4.jar, /root/0610newtest/libs/jeecg/lib/commons-compress-1.19.jar, /root/0610newtest/libs/jeecg/lib/commons-io-2.6.jar, /root/0610newtest/libs/jeecg/lib/commons-lang-2.6.jar, /root/0610newtest/libs/jeecg/lib/commons-lang3-3.10.jar, /root/0610newtest/libs/jeecg/lib/commons-logging-1.1.1.jar, /root/0610newtest/libs/jeecg/lib/commons-math3-3.6.1.jar, /root/0610newtest/libs/jeecg/lib/commons-pool2-2.8.1.jar, /root/0610newtest/libs/jeecg/lib/core-3.3.1.jar, /root/0610newtest/libs/jeecg/lib/curvesapi-1.06.jar, /root/0610newtest/libs/jeecg/lib/dom4j-2.1.3.jar, /root/0610newtest/libs/jeecg/lib/druid-1.1.22.jar, /root/0610newtest/libs/jeecg/lib/druid-spring-boot-starter-1.1.22.jar, /root/0610newtest/libs/jeecg/lib/dynamic-datasource-spring-boot-starter-3.2.0.jar, /root/0610newtest/libs/jeecg/lib/encoder-1.2.2.jar, /root/0610newtest/libs/jeecg/lib/error_prone_annotations-2.3.4.jar, /root/0610newtest/libs/jeecg/lib/ezmorph-1.0.6.jar, /root/0610newtest/libs/jeecg/lib/failureaccess-1.0.1.jar, /root/0610newtest/libs/jeecg/lib/fastjson-1.2.78.jar, /root/0610newtest/libs/jeecg/lib/forms-7.1.2.jar, /root/0610newtest/libs/jeecg/lib/freemarker-2.3.30.jar, /root/0610newtest/libs/jeecg/lib/gson-2.8.6.jar, /root/0610newtest/libs/jeecg/lib/guava-29.0-jre.jar, /root/0610newtest/libs/jeecg/lib/hibernate-commons-annotations-5.1.0.Final.jar, /root/0610newtest/libs/jeecg/lib/hibernate-core-5.4.22.Final.jar, /root/0610newtest/libs/jeecg/lib/hibernate-re-3.0.02.jar, /root/0610newtest/libs/jeecg/lib/hibernate-validator-6.1.6.Final.jar, /root/0610newtest/libs/jeecg/lib/httpclient-4.5.13.jar, /root/0610newtest/libs/jeecg/lib/httpcore-4.4.13.jar, /root/0610newtest/libs/jeecg/lib/hutool-core-5.3.8.jar, /root/0610newtest/libs/jeecg/lib/hutool-crypto-5.3.8.jar, /root/0610newtest/libs/jeecg/lib/ini4j-0.5.4.jar, /root/0610newtest/libs/jeecg/lib/io-7.1.2.jar, /root/0610newtest/libs/jeecg/lib/istack-commons-runtime-3.0.11.jar, /root/0610newtest/libs/jeecg/lib/itext-2.1.7.jar, /root/0610newtest/libs/jeecg/lib/itext-rtf-2.1.7.jar, /root/0610newtest/libs/jeecg/lib/j2objc-annotations-1.3.jar, /root/0610newtest/libs/jeecg/lib/jackson-annotations-2.11.3.jar, /root/0610newtest/libs/jeecg/lib/jackson-core-2.11.3.jar, /root/0610newtest/libs/jeecg/lib/jackson-databind-2.11.3.jar, /root/0610newtest/libs/jeecg/lib/jackson-datatype-jdk8-2.11.3.jar, /root/0610newtest/libs/jeecg/lib/jackson-datatype-jsr310-2.11.3.jar, /root/0610newtest/libs/jeecg/lib/jackson-module-parameter-names-2.11.3.jar, /root/0610newtest/libs/jeecg/lib/jai-imageio-core-1.3.1.jar, /root/0610newtest/libs/jeecg/lib/jakarta.activation-1.2.2.jar, /root/0610newtest/libs/jeecg/lib/jakarta.activation-api-1.2.2.jar, /root/0610newtest/libs/jeecg/lib/jakarta.annotation-api-1.3.5.jar, /root/0610newtest/libs/jeecg/lib/jakarta.el-3.0.3.jar, /root/0610newtest/libs/jeecg/lib/jakarta.mail-1.6.5.jar, /root/0610newtest/libs/jeecg/lib/jakarta.validation-api-2.0.2.jar, /root/0610newtest/libs/jeecg/lib/jakarta.xml.bind-api-2.3.3.jar, /root/0610newtest/libs/jeecg/lib/jandex-2.1.3.Final.jar, /root/0610newtest/libs/jeecg/lib/java-jwt-3.11.0.jar, /root/0610newtest/libs/jeecg/lib/javase-3.3.1.jar, /root/0610newtest/libs/jeecg/lib/javassist-3.24.0-GA.jar, /root/0610newtest/libs/jeecg/lib/javax.activation-api-1.2.0.jar, /root/0610newtest/libs/jeecg/lib/javax.persistence-api-2.2.jar, /root/0610newtest/libs/jeecg/lib/jaxb-api-2.3.1.jar, /root/0610newtest/libs/jeecg/lib/jaxb-runtime-2.3.3.jar, /root/0610newtest/libs/jeecg/lib/jboss-logging-3.4.1.Final.jar, /root/0610newtest/libs/jeecg/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar, /root/0610newtest/libs/jeecg/lib/jcommander-1.72.jar, /root/0610newtest/libs/jeecg/lib/jdom-1.1.jar, /root/0610newtest/libs/jeecg/lib/jdom2-2.0.6.jar, /root/0610newtest/libs/jeecg/lib/jedis-3.3.0.jar, /root/0610newtest/libs/jeecg/lib/jeecg-boot-module-demo-3.0.jar, /root/0610newtest/libs/jeecg/lib/jeewx-api-1.4.6.jar, /root/0610newtest/libs/jeecg/lib/jettison-1.1.jar, /root/0610newtest/libs/jeecg/lib/jimureport-font-1.1.0.jar, /root/0610newtest/libs/jeecg/lib/jimureport-spring-boot-starter-1.4.0.jar, /root/0610newtest/libs/jeecg/lib/json-lib-2.4-jdk15.jar, /root/0610newtest/libs/jeecg/lib/jsqlparser-4.0.jar, /root/0610newtest/libs/jeecg/lib/jsr305-3.0.2.jar, /root/0610newtest/libs/jeecg/lib/jul-to-slf4j-1.7.30.jar, /root/0610newtest/libs/jeecg/lib/justauth-spring-boot-starter-1.3.4.jar, /root/0610newtest/libs/jeecg/lib/kernel-7.1.2.jar, /root/0610newtest/libs/jeecg/lib/knife4j-annotations-2.0.9.jar, /root/0610newtest/libs/jeecg/lib/knife4j-core-2.0.9.jar, /root/0610newtest/libs/jeecg/lib/knife4j-spring-2.0.9.jar, /root/0610newtest/libs/jeecg/lib/knife4j-spring-boot-autoconfigure-2.0.9.jar, /root/0610newtest/libs/jeecg/lib/knife4j-spring-boot-starter-2.0.9.jar, /root/0610newtest/libs/jeecg/lib/knife4j-spring-ui-2.0.9.jar, /root/0610newtest/libs/jeecg/lib/kotlin-stdlib-1.3.72.jar, /root/0610newtest/libs/jeecg/lib/kotlin-stdlib-common-1.3.72.jar, /root/0610newtest/libs/jeecg/lib/layout-7.1.2.jar, /root/0610newtest/libs/jeecg/lib/lettuce-core-5.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar, /root/0610newtest/libs/jeecg/lib/log4j-api-2.15.0.jar, /root/0610newtest/libs/jeecg/lib/log4j-to-slf4j-2.15.0.jar, /root/0610newtest/libs/jeecg/lib/logback-classic-1.2.3.jar, /root/0610newtest/libs/jeecg/lib/logback-core-1.2.3.jar, /root/0610newtest/libs/jeecg/lib/lombok-1.18.16.jar, /root/0610newtest/libs/jeecg/lib/mapstruct-1.3.1.Final.jar, /root/0610newtest/libs/jeecg/lib/mchange-commons-java-0.2.15.jar, /root/0610newtest/libs/jeecg/lib/micrometer-core-1.5.6.jar, /root/0610newtest/libs/jeecg/lib/minidao-pe-1.8.6.jar, /root/0610newtest/libs/jeecg/lib/minidao-spring-boot-starter-1.8.6.jar, /root/0610newtest/libs/jeecg/lib/minio-8.0.3.jar, /root/0610newtest/libs/jeecg/lib/mongo-java-driver-3.12.10.jar, /root/0610newtest/libs/jeecg/lib/mybatis-3.5.7.jar, /root/0610newtest/libs/jeecg/lib/mybatis-plus-3.4.3.1.jar, /root/0610newtest/libs/jeecg/lib/mybatis-plus-annotation-3.4.3.1.jar, /root/0610newtest/libs/jeecg/lib/mybatis-plus-boot-starter-3.4.3.1.jar, /root/0610newtest/libs/jeecg/lib/mybatis-plus-core-3.4.3.1.jar, /root/0610newtest/libs/jeecg/lib/mybatis-plus-extension-3.4.3.1.jar, /root/0610newtest/libs/jeecg/lib/mybatis-spring-2.0.6.jar, /root/0610newtest/libs/jeecg/lib/mysql-connector-java-8.0.22.jar, /root/0610newtest/libs/jeecg/lib/netty-buffer-4.1.53.Final.jar, /root/0610newtest/libs/jeecg/lib/netty-codec-4.1.53.Final.jar, /root/0610newtest/libs/jeecg/lib/netty-common-4.1.53.Final.jar, /root/0610newtest/libs/jeecg/lib/netty-handler-4.1.53.Final.jar, /root/0610newtest/libs/jeecg/lib/netty-resolver-4.1.53.Final.jar, /root/0610newtest/libs/jeecg/lib/netty-transport-4.1.53.Final.jar, /root/0610newtest/libs/jeecg/lib/ognl-3.2.21.jar, /root/0610newtest/libs/jeecg/lib/ojdbc6-11.2.0.3.jar, /root/0610newtest/libs/jeecg/lib/okhttp-4.4.1.jar, /root/0610newtest/libs/jeecg/lib/okio-2.4.3.jar, /root/0610newtest/libs/jeecg/lib/ooxml-schemas-1.4.jar, /root/0610newtest/libs/jeecg/lib/opentracing-api-0.33.0.jar, /root/0610newtest/libs/jeecg/lib/opentracing-noop-0.33.0.jar, /root/0610newtest/libs/jeecg/lib/opentracing-util-0.33.0.jar, /root/0610newtest/libs/jeecg/lib/org.jacoco.agent-0.8.5-runtime.jar, /root/0610newtest/libs/jeecg/lib/pdfa-7.1.2.jar, /root/0610newtest/libs/jeecg/lib/poi-4.1.2.jar, /root/0610newtest/libs/jeecg/lib/poi-ooxml-4.1.2.jar, /root/0610newtest/libs/jeecg/lib/poi-ooxml-schemas-4.1.2.jar, /root/0610newtest/libs/jeecg/lib/poi-scratchpad-4.1.2.jar, /root/0610newtest/libs/jeecg/lib/postgresql-42.2.6.jar, /root/0610newtest/libs/jeecg/lib/quartz-2.3.2.jar, /root/0610newtest/libs/jeecg/lib/reactive-streams-1.0.3.jar, /root/0610newtest/libs/jeecg/lib/reactor-core-3.3.11.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/shiro-cache-1.7.1.jar, /root/0610newtest/libs/jeecg/lib/shiro-config-core-1.7.1.jar, /root/0610newtest/libs/jeecg/lib/shiro-config-ogdl-1.7.1.jar, /root/0610newtest/libs/jeecg/lib/shiro-core-1.7.1.jar, /root/0610newtest/libs/jeecg/lib/shiro-crypto-cipher-1.7.1.jar, /root/0610newtest/libs/jeecg/lib/shiro-crypto-core-1.7.1.jar, /root/0610newtest/libs/jeecg/lib/shiro-crypto-hash-1.7.1.jar, /root/0610newtest/libs/jeecg/lib/shiro-event-1.7.1.jar, /root/0610newtest/libs/jeecg/lib/shiro-lang-1.7.1.jar, /root/0610newtest/libs/jeecg/lib/shiro-redis-3.1.0.jar, /root/0610newtest/libs/jeecg/lib/shiro-spring-1.7.1.jar, /root/0610newtest/libs/jeecg/lib/shiro-spring-boot-starter-1.7.1.jar, /root/0610newtest/libs/jeecg/lib/shiro-web-1.7.1.jar, /root/0610newtest/libs/jeecg/lib/simple-http-1.0.2.jar, /root/0610newtest/libs/jeecg/lib/simple-xml-safe-2.7.1.jar, /root/0610newtest/libs/jeecg/lib/slf4j-api-1.7.30.jar, /root/0610newtest/libs/jeecg/lib/snakeyaml-1.26.jar, /root/0610newtest/libs/jeecg/lib/spring-aop-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-beans-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-actuator-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-actuator-autoconfigure-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-autoconfigure-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-actuator-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-aop-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-data-redis-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-freemarker-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-jdbc-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-json-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-logging-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-mail-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-quartz-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-tomcat-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-validation-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-web-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-boot-starter-websocket-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-context-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-context-support-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-core-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-data-commons-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-data-keyvalue-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-data-redis-2.3.5.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-expression-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-jcl-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-jdbc-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-messaging-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-oxm-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-plugin-core-2.0.0.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-plugin-metadata-2.0.0.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-tx-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-web-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-webmvc-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/spring-websocket-5.2.10.RELEASE.jar, /root/0610newtest/libs/jeecg/lib/springfox-bean-validators-2.10.5.jar, /root/0610newtest/libs/jeecg/lib/springfox-core-2.10.5.jar, /root/0610newtest/libs/jeecg/lib/springfox-schema-2.10.5.jar, /root/0610newtest/libs/jeecg/lib/springfox-spi-2.10.5.jar, /root/0610newtest/libs/jeecg/lib/springfox-spring-web-2.10.5.jar, /root/0610newtest/libs/jeecg/lib/springfox-spring-webmvc-2.10.5.jar, /root/0610newtest/libs/jeecg/lib/springfox-swagger-common-2.10.5.jar, /root/0610newtest/libs/jeecg/lib/springfox-swagger2-2.10.5.jar, /root/0610newtest/libs/jeecg/lib/sqljdbc4-4.0.jar, /root/0610newtest/libs/jeecg/lib/stax-api-1.0.1.jar, /root/0610newtest/libs/jeecg/lib/swagger-annotations-1.5.22.jar, /root/0610newtest/libs/jeecg/lib/swagger-models-1.5.22.jar, /root/0610newtest/libs/jeecg/lib/tomcat-embed-core-9.0.39.jar, /root/0610newtest/libs/jeecg/lib/tomcat-embed-websocket-9.0.39.jar, /root/0610newtest/libs/jeecg/lib/txw2-2.3.3.jar, /root/0610newtest/libs/jeecg/lib/xercesImpl-2.9.1.jar, /root/0610newtest/libs/jeecg/lib/xml-apis-1.3.04.jar, /root/0610newtest/libs/jeecg/lib/xmlbeans-3.1.0.jar
+Using a timeout of 3600 min.
+[Task FACTS...]
+[Task COMPILE...]
+-- Fact Generation --
+Using cached analysis executable /data/doop/cache/souffle-analyses/context-insensitive/133db91a64ccbf79a73fbdf1ddac915a928332c48ac2c65e43000646eb0b549d
+[Task COMPILE Done]
+SOOT_FACT_GEN: Logging initialized, using directory: /data/doop/log
+SOOT_FACT_GEN: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SOOT_FACT_GEN: SLF4J: Defaulting to no-operation (NOP) logger implementation
+SOOT_FACT_GEN: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+SOOT_FACT_GEN: Preprocessing application: /root/0610newtest/src/jeecg/jeecg-boot-base-core-3.0.jar
+SOOT_FACT_GEN: Preprocessing application: /root/0610newtest/src/jeecg/jeecg-boot-base-tools-3.0.jar
+SOOT_FACT_GEN: Preprocessing application: /root/0610newtest/src/jeecg/jeecg-boot-system.jar
+SOOT_FACT_GEN: Preprocessing application: /root/0610newtest/src/jeecg/jeecg-system-local-api-3.0.jar
+SOOT_FACT_GEN: Preprocessing platform library: /root/doop-benchmarks/JREs/jre1.8/lib/rt.jar
+SOOT_FACT_GEN: Preprocessing platform library: /root/doop-benchmarks/JREs/jre1.8/lib/jce.jar
+SOOT_FACT_GEN: Preprocessing platform library: /root/doop-benchmarks/JREs/jre1.8/lib/jsse.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/HdrHistogram-2.1.12.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/HikariCP-3.4.5.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/JustAuth-1.15.7.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/LatencyUtils-2.0.3.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/Saxon-HE-9.8.0-4.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/SparseBitSet-1.2.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/alipay-sdk-java-3.1.0.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/aliyun-java-sdk-core-4.5.10.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/aliyun-java-sdk-dysmsapi-2.1.0.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/aliyun-java-sdk-kms-2.11.0.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/aliyun-java-sdk-ram-3.1.0.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/aliyun-sdk-oss-3.11.2.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/annotations-13.0.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/antlr-2.7.7.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/antlr4-runtime-4.7.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/aspectjrt-1.9.6.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/aspectjweaver-1.9.6.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/autopoi-1.3.5.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/autopoi-web-1.3.5.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/aviator-5.2.6.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/bcmail-jdk14-1.38.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/bcmail-jdk14-138.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/bcprov-jdk14-1.38.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/bcprov-jdk14-138.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/bctsp-jdk14-1.38.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/byte-buddy-1.10.17.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/checker-qual-2.11.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/checkstyle-8.3.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/classgraph-4.1.7.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/classmate-1.5.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/codegenerate-1.3.7.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/commons-beanutils-1.9.4.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/commons-cli-1.4.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/commons-codec-1.14.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/commons-collections-3.2.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/commons-collections4-4.4.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/commons-compress-1.19.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/commons-io-2.6.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/commons-lang-2.6.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/commons-lang3-3.10.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/commons-logging-1.1.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/commons-math3-3.6.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/commons-pool2-2.8.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/core-3.3.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/curvesapi-1.06.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/dom4j-2.1.3.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/druid-1.1.22.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/druid-spring-boot-starter-1.1.22.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/dynamic-datasource-spring-boot-starter-3.2.0.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/encoder-1.2.2.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/error_prone_annotations-2.3.4.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/ezmorph-1.0.6.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/failureaccess-1.0.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/fastjson-1.2.78.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/forms-7.1.2.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/freemarker-2.3.30.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/gson-2.8.6.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/guava-29.0-jre.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/hibernate-commons-annotations-5.1.0.Final.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/hibernate-core-5.4.22.Final.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/hibernate-re-3.0.02.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/hibernate-validator-6.1.6.Final.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/httpclient-4.5.13.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/httpcore-4.4.13.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/hutool-core-5.3.8.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/hutool-crypto-5.3.8.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/ini4j-0.5.4.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/io-7.1.2.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/istack-commons-runtime-3.0.11.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/itext-2.1.7.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/itext-rtf-2.1.7.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/j2objc-annotations-1.3.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jackson-annotations-2.11.3.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jackson-core-2.11.3.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jackson-databind-2.11.3.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jackson-datatype-jdk8-2.11.3.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jackson-datatype-jsr310-2.11.3.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jackson-module-parameter-names-2.11.3.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jai-imageio-core-1.3.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jakarta.activation-1.2.2.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jakarta.activation-api-1.2.2.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jakarta.annotation-api-1.3.5.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jakarta.el-3.0.3.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jakarta.mail-1.6.5.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jakarta.validation-api-2.0.2.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jakarta.xml.bind-api-2.3.3.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jandex-2.1.3.Final.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/java-jwt-3.11.0.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/javase-3.3.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/javassist-3.24.0-GA.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/javax.activation-api-1.2.0.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/javax.persistence-api-2.2.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jaxb-api-2.3.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jaxb-runtime-2.3.3.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jboss-logging-3.4.1.Final.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jcommander-1.72.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jdom-1.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jdom2-2.0.6.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jedis-3.3.0.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jeecg-boot-module-demo-3.0.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jeewx-api-1.4.6.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jettison-1.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jimureport-font-1.1.0.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jimureport-spring-boot-starter-1.4.0.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/json-lib-2.4-jdk15.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jsqlparser-4.0.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jsr305-3.0.2.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/jul-to-slf4j-1.7.30.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/justauth-spring-boot-starter-1.3.4.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/kernel-7.1.2.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/knife4j-annotations-2.0.9.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/knife4j-core-2.0.9.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/knife4j-spring-2.0.9.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/knife4j-spring-boot-autoconfigure-2.0.9.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/knife4j-spring-boot-starter-2.0.9.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/knife4j-spring-ui-2.0.9.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/kotlin-stdlib-1.3.72.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/kotlin-stdlib-common-1.3.72.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/layout-7.1.2.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/lettuce-core-5.3.5.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/log4j-api-2.15.0.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/log4j-to-slf4j-2.15.0.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/logback-classic-1.2.3.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/logback-core-1.2.3.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/lombok-1.18.16.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/mapstruct-1.3.1.Final.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/mchange-commons-java-0.2.15.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/micrometer-core-1.5.6.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/minidao-pe-1.8.6.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/minidao-spring-boot-starter-1.8.6.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/minio-8.0.3.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/mongo-java-driver-3.12.10.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/mybatis-3.5.7.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/mybatis-plus-3.4.3.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/mybatis-plus-annotation-3.4.3.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/mybatis-plus-boot-starter-3.4.3.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/mybatis-plus-core-3.4.3.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/mybatis-plus-extension-3.4.3.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/mybatis-spring-2.0.6.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/mysql-connector-java-8.0.22.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/netty-buffer-4.1.53.Final.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/netty-codec-4.1.53.Final.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/netty-common-4.1.53.Final.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/netty-handler-4.1.53.Final.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/netty-resolver-4.1.53.Final.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/netty-transport-4.1.53.Final.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/ognl-3.2.21.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/ojdbc6-11.2.0.3.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/okhttp-4.4.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/okio-2.4.3.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/ooxml-schemas-1.4.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/opentracing-api-0.33.0.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/opentracing-noop-0.33.0.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/opentracing-util-0.33.0.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/org.jacoco.agent-0.8.5-runtime.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/pdfa-7.1.2.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/poi-4.1.2.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/poi-ooxml-4.1.2.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/poi-ooxml-schemas-4.1.2.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/poi-scratchpad-4.1.2.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/postgresql-42.2.6.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/quartz-2.3.2.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/reactive-streams-1.0.3.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/reactor-core-3.3.11.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/shiro-cache-1.7.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/shiro-config-core-1.7.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/shiro-config-ogdl-1.7.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/shiro-core-1.7.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/shiro-crypto-cipher-1.7.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/shiro-crypto-core-1.7.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/shiro-crypto-hash-1.7.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/shiro-event-1.7.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/shiro-lang-1.7.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/shiro-redis-3.1.0.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/shiro-spring-1.7.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/shiro-spring-boot-starter-1.7.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/shiro-web-1.7.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/simple-http-1.0.2.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/simple-xml-safe-2.7.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/slf4j-api-1.7.30.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/snakeyaml-1.26.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-aop-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-beans-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-boot-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-boot-actuator-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-boot-actuator-autoconfigure-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-boot-autoconfigure-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-actuator-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-aop-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-data-redis-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-freemarker-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-jdbc-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-json-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-logging-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-mail-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-quartz-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-tomcat-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-validation-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-web-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-websocket-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-context-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-context-support-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-core-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-data-commons-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-data-keyvalue-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-data-redis-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-expression-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-jcl-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-jdbc-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-messaging-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-oxm-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-plugin-core-2.0.0.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-plugin-metadata-2.0.0.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-tx-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-web-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-webmvc-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/spring-websocket-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/springfox-bean-validators-2.10.5.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/springfox-core-2.10.5.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/springfox-schema-2.10.5.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/springfox-spi-2.10.5.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/springfox-spring-web-2.10.5.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/springfox-spring-webmvc-2.10.5.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/springfox-swagger-common-2.10.5.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/springfox-swagger2-2.10.5.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/sqljdbc4-4.0.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/stax-api-1.0.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/swagger-annotations-1.5.22.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/swagger-models-1.5.22.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/tomcat-embed-core-9.0.39.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/tomcat-embed-websocket-9.0.39.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/txw2-2.3.3.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/xercesImpl-2.9.1.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/xml-apis-1.3.04.jar
+SOOT_FACT_GEN: Preprocessing dependency: /root/0610newtest/libs/jeecg/lib/xmlbeans-3.1.0.jar
+SOOT_FACT_GEN: Adding archive: /root/0610newtest/src/jeecg/jeecg-boot-base-core-3.0.jar
+SOOT_FACT_GEN: Adding archive: /root/0610newtest/src/jeecg/jeecg-boot-base-tools-3.0.jar
+SOOT_FACT_GEN: Adding archive: /root/0610newtest/src/jeecg/jeecg-boot-system.jar
+SOOT_FACT_GEN: Adding archive: /root/0610newtest/src/jeecg/jeecg-system-local-api-3.0.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/HdrHistogram-2.1.12.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/HikariCP-3.4.5.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/JustAuth-1.15.7.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/LatencyUtils-2.0.3.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/Saxon-HE-9.8.0-4.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/SparseBitSet-1.2.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/alipay-sdk-java-3.1.0.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/aliyun-java-sdk-core-4.5.10.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/aliyun-java-sdk-dysmsapi-2.1.0.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/aliyun-java-sdk-kms-2.11.0.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/aliyun-java-sdk-ram-3.1.0.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/aliyun-sdk-oss-3.11.2.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/annotations-13.0.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/antlr-2.7.7.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/antlr4-runtime-4.7.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/aspectjrt-1.9.6.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/aspectjweaver-1.9.6.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/autopoi-1.3.5.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/autopoi-web-1.3.5.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/aviator-5.2.6.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/bcmail-jdk14-1.38.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/bcmail-jdk14-138.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/bcprov-jdk14-1.38.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/bcprov-jdk14-138.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/bctsp-jdk14-1.38.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/byte-buddy-1.10.17.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/checker-qual-2.11.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/checkstyle-8.3.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/classgraph-4.1.7.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/classmate-1.5.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/codegenerate-1.3.7.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/commons-beanutils-1.9.4.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/commons-cli-1.4.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/commons-codec-1.14.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/commons-collections-3.2.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/commons-collections4-4.4.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/commons-compress-1.19.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/commons-io-2.6.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/commons-lang-2.6.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/commons-lang3-3.10.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/commons-logging-1.1.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/commons-math3-3.6.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/commons-pool2-2.8.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/core-3.3.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/curvesapi-1.06.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/dom4j-2.1.3.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/druid-1.1.22.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/druid-spring-boot-starter-1.1.22.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/dynamic-datasource-spring-boot-starter-3.2.0.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/encoder-1.2.2.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/error_prone_annotations-2.3.4.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/ezmorph-1.0.6.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/failureaccess-1.0.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/fastjson-1.2.78.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/forms-7.1.2.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/freemarker-2.3.30.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/gson-2.8.6.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/guava-29.0-jre.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/hibernate-commons-annotations-5.1.0.Final.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/hibernate-core-5.4.22.Final.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/hibernate-re-3.0.02.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/hibernate-validator-6.1.6.Final.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/httpclient-4.5.13.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/httpcore-4.4.13.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/hutool-core-5.3.8.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/hutool-crypto-5.3.8.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/ini4j-0.5.4.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/io-7.1.2.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/istack-commons-runtime-3.0.11.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/itext-2.1.7.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/itext-rtf-2.1.7.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/j2objc-annotations-1.3.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jackson-annotations-2.11.3.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jackson-core-2.11.3.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jackson-databind-2.11.3.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jackson-datatype-jdk8-2.11.3.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jackson-datatype-jsr310-2.11.3.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jackson-module-parameter-names-2.11.3.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jai-imageio-core-1.3.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jakarta.activation-1.2.2.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jakarta.activation-api-1.2.2.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jakarta.annotation-api-1.3.5.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jakarta.el-3.0.3.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jakarta.mail-1.6.5.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jakarta.validation-api-2.0.2.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jakarta.xml.bind-api-2.3.3.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jandex-2.1.3.Final.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/java-jwt-3.11.0.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/javase-3.3.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/javassist-3.24.0-GA.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/javax.activation-api-1.2.0.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/javax.persistence-api-2.2.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jaxb-api-2.3.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jaxb-runtime-2.3.3.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jboss-logging-3.4.1.Final.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jcommander-1.72.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jdom-1.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jdom2-2.0.6.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jedis-3.3.0.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jeecg-boot-module-demo-3.0.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jeewx-api-1.4.6.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jettison-1.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jimureport-font-1.1.0.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jimureport-spring-boot-starter-1.4.0.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/json-lib-2.4-jdk15.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jsqlparser-4.0.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jsr305-3.0.2.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/jul-to-slf4j-1.7.30.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/justauth-spring-boot-starter-1.3.4.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/kernel-7.1.2.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/knife4j-annotations-2.0.9.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/knife4j-core-2.0.9.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/knife4j-spring-2.0.9.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/knife4j-spring-boot-autoconfigure-2.0.9.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/knife4j-spring-boot-starter-2.0.9.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/knife4j-spring-ui-2.0.9.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/kotlin-stdlib-1.3.72.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/kotlin-stdlib-common-1.3.72.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/layout-7.1.2.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/lettuce-core-5.3.5.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/log4j-api-2.15.0.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/log4j-to-slf4j-2.15.0.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/logback-classic-1.2.3.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/logback-core-1.2.3.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/lombok-1.18.16.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/mapstruct-1.3.1.Final.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/mchange-commons-java-0.2.15.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/micrometer-core-1.5.6.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/minidao-pe-1.8.6.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/minidao-spring-boot-starter-1.8.6.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/minio-8.0.3.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/mongo-java-driver-3.12.10.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/mybatis-3.5.7.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/mybatis-plus-3.4.3.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/mybatis-plus-annotation-3.4.3.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/mybatis-plus-boot-starter-3.4.3.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/mybatis-plus-core-3.4.3.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/mybatis-plus-extension-3.4.3.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/mybatis-spring-2.0.6.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/mysql-connector-java-8.0.22.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/netty-buffer-4.1.53.Final.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/netty-codec-4.1.53.Final.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/netty-common-4.1.53.Final.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/netty-handler-4.1.53.Final.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/netty-resolver-4.1.53.Final.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/netty-transport-4.1.53.Final.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/ognl-3.2.21.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/ojdbc6-11.2.0.3.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/okhttp-4.4.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/okio-2.4.3.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/ooxml-schemas-1.4.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/opentracing-api-0.33.0.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/opentracing-noop-0.33.0.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/opentracing-util-0.33.0.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/org.jacoco.agent-0.8.5-runtime.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/pdfa-7.1.2.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/poi-4.1.2.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/poi-ooxml-4.1.2.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/poi-ooxml-schemas-4.1.2.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/poi-scratchpad-4.1.2.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/postgresql-42.2.6.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/quartz-2.3.2.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/reactive-streams-1.0.3.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/reactor-core-3.3.11.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/shiro-cache-1.7.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/shiro-config-core-1.7.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/shiro-config-ogdl-1.7.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/shiro-core-1.7.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/shiro-crypto-cipher-1.7.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/shiro-crypto-core-1.7.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/shiro-crypto-hash-1.7.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/shiro-event-1.7.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/shiro-lang-1.7.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/shiro-redis-3.1.0.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/shiro-spring-1.7.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/shiro-spring-boot-starter-1.7.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/shiro-web-1.7.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/simple-http-1.0.2.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/simple-xml-safe-2.7.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/slf4j-api-1.7.30.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/snakeyaml-1.26.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-aop-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-beans-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-boot-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-boot-actuator-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-boot-actuator-autoconfigure-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-boot-autoconfigure-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-actuator-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-aop-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-data-redis-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-freemarker-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-jdbc-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-json-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-logging-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-mail-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-quartz-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-tomcat-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-validation-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-web-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-boot-starter-websocket-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-context-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-context-support-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-core-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-data-commons-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-data-keyvalue-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-data-redis-2.3.5.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-expression-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-jcl-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-jdbc-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-messaging-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-oxm-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-plugin-core-2.0.0.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-plugin-metadata-2.0.0.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-tx-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-web-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-webmvc-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/spring-websocket-5.2.10.RELEASE.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/springfox-bean-validators-2.10.5.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/springfox-core-2.10.5.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/springfox-schema-2.10.5.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/springfox-spi-2.10.5.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/springfox-spring-web-2.10.5.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/springfox-spring-webmvc-2.10.5.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/springfox-swagger-common-2.10.5.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/springfox-swagger2-2.10.5.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/sqljdbc4-4.0.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/stax-api-1.0.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/swagger-annotations-1.5.22.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/swagger-models-1.5.22.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/tomcat-embed-core-9.0.39.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/tomcat-embed-websocket-9.0.39.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/txw2-2.3.3.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/xercesImpl-2.9.1.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/xml-apis-1.3.04.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/0610newtest/libs/jeecg/lib/xmlbeans-3.1.0.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/doop-benchmarks/JREs/jre1.8/lib/rt.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/doop-benchmarks/JREs/jre1.8/lib/jce.jar
+SOOT_FACT_GEN: Adding archive for resolving: /root/doop-benchmarks/JREs/jre1.8/lib/jsse.jar
+SOOT_FACT_GEN: Classes in input (application) jar(s): 399
+SOOT_FACT_GEN: not find META-INFO:/root/0610newtest/libs/jeecg/lib/core-3.3.1.jar
+SOOT_FACT_GEN: not find META-INFO:/root/0610newtest/libs/jeecg/lib/mchange-commons-java-0.2.15.jar
+SOOT_FACT_GEN: <synthetic.method.datatable.TABLE: void setkeyInject(java.lang.Object)> -> _SINK_
+SOOT_FACT_GEN: <synthetic.method.datatable.TABLE: void setvalueInject(java.lang.Object)> -> _SINK_
+SOOT_FACT_GEN: <synthetic.method.datatable.TABLE: void settableInject(java.lang.Object)> -> _SINK_
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.jmreport.desreport.dao.JimuReportDictDao in org.jeecg.modules.jmreport.desreport.service.a.c
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.jmreport.desreport.dao.JimuReportDictItemDao in org.jeecg.modules.jmreport.desreport.service.a.c
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.online.cgform.mapper.OnlCgformEnhanceJavaMapper in org.jeecg.modules.online.cgform.service.a.b
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.online.cgform.mapper.OnlCgformEnhanceSqlMapper in org.jeecg.modules.online.cgform.service.a.b
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.jmreport.desreport.dao.JimuReportShareDao in org.jeecg.modules.jmreport.desreport.service.a.f
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.online.cgform.mapper.OnlineMapper in org.jeecg.modules.online.cgform.service.a.i
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.demo.test.mapper.JeecgOrderCustomerMapper in org.jeecg.modules.demo.test.service.impl.JeecgOrderCustomerServiceImpl
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.demo.test.mapper.JeecgOrderMainMapper in org.jeecg.modules.demo.test.service.impl.JeecgOrderMainServiceImpl
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.demo.test.mapper.JeecgOrderCustomerMapper in org.jeecg.modules.demo.test.service.impl.JeecgOrderMainServiceImpl
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.demo.test.mapper.JeecgOrderTicketMapper in org.jeecg.modules.demo.test.service.impl.JeecgOrderMainServiceImpl
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.demo.test.mapper.JeecgOrderTicketMapper in org.jeecg.modules.demo.test.service.impl.JeecgOrderTicketServiceImpl
+SOOT_FACT_GEN: can't find this bean: org.springframework.context.annotation.LoadTimeWeavingConfigurer in org.springframework.context.annotation.LoadTimeWeavingConfiguration
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.jmreport.desreport.dao.JimuReportDbDao in org.jeecg.modules.jmreport.desreport.service.a.k
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.jmreport.desreport.dao.JimuReportDbFieldDao in org.jeecg.modules.jmreport.desreport.service.a.g
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.jmreport.desreport.dao.JimuReportDataSourceDao in org.jeecg.modules.jmreport.desreport.service.a.a
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.online.cgreport.mapper.OnlCgreportHeadMapper in org.jeecg.modules.online.cgreport.service.a.c
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.jmreport.desreport.dao.JimuReportMapDao in org.jeecg.modules.jmreport.desreport.service.a.m
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.jmreport.desreport.dao.JimuReportDictItemDao in org.jeecg.modules.jmreport.desreport.service.a.b
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.jmreport.desreport.dao.JimuReportDbParamDao in org.jeecg.modules.jmreport.desreport.service.a.h
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.jmreport.desreport.dao.JimuReportDbDao in org.jeecg.modules.jmreport.desreport.service.a.e
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.jmreport.desreport.dao.JimuReportDataSourceDao in org.jeecg.modules.jmreport.desreport.service.a.e
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.jmreport.desreport.dao.JimuReportDbParamDao in org.jeecg.modules.jmreport.desreport.service.a.e
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.jmreport.desreport.dao.JimuReportDao in org.jeecg.modules.jmreport.desreport.service.a.e
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.jmreport.desreport.dao.JimuReportDbFieldDao in org.jeecg.modules.jmreport.desreport.service.a.e
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.jmreport.desreport.dao.JimuReportLinkDao in org.jeecg.modules.jmreport.desreport.service.a.e
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.online.cgform.mapper.OnlCgformFieldMapper in org.jeecg.modules.online.cgform.service.a.c
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.online.cgform.mapper.OnlCgformHeadMapper in org.jeecg.modules.online.cgform.service.a.c
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.online.cgform.mapper.OnlineMapper in org.jeecg.modules.online.cgform.service.a.c
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.online.cgform.mapper.OnlCgformHeadMapper in org.jeecg.modules.online.cgform.service.a.e
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.online.cgform.mapper.OnlCgformEnhanceJsMapper in org.jeecg.modules.online.cgform.service.a.d
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.online.cgform.mapper.OnlCgformButtonMapper in org.jeecg.modules.online.cgform.service.a.d
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.online.cgform.mapper.OnlCgformEnhanceJavaMapper in org.jeecg.modules.online.cgform.service.a.d
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.online.cgform.mapper.OnlCgformEnhanceSqlMapper in org.jeecg.modules.online.cgform.service.a.d
+SOOT_FACT_GEN: can't find this bean: org.jeecg.common.bpm.api.IBpmBaseExtAPI in org.jeecg.modules.online.cgform.service.a.d
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.jmreport.desreport.dao.JimuReportLinkDao in org.jeecg.modules.jmreport.desreport.service.a.d
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.online.cgform.mapper.OnlCgformHeadMapper in org.jeecg.modules.online.cgform.service.a.g
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.online.cgform.mapper.OnlCgformFieldMapper in org.jeecg.modules.online.cgform.service.a.g
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.jmreport.desreport.dao.JimuReportDbDao in org.jeecg.modules.jmreport.desreport.service.a.i
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.jmreport.desreport.dao.JimuReportDbParamDao in org.jeecg.modules.jmreport.desreport.service.a.i
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.jmreport.desreport.dao.JimuReportDataSourceDao in org.jeecg.modules.jmreport.desreport.service.a.i
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.online.auth.mapper.OnlAuthRelationMapper in org.jeecg.modules.online.auth.service.a.b
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.demo.test.mapper.JeecgDemoMapper in org.jeecg.modules.demo.test.service.impl.JeecgDemoServiceImpl
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.online.auth.mapper.OnlAuthRelationMapper in org.jeecg.modules.online.auth.service.a.a
+SOOT_FACT_GEN: can't find this bean: org.jeecg.modules.jmreport.desreport.dao.JimuReportDataSourceDao in org.jeecg.modules.jmreport.desreport.service.a.j
+SOOT_FACT_GEN: Total classes in Scene: 103299
+SOOT_FACT_GEN: Retrieved all bodies (time: 351)
+SOOT_FACT_GEN: Fact generation cores: 24
+SOOT_FACT_GEN: Error while processing method: <org.hibernate.validator.internal.cfg.context.ContainerElementConstraintMappingContextImpl: void <init>(org.hibernate.validator.internal.cfg.context.TypeConstraintMappingContextImpl,org.hibernate.validator.cfg.context.ContainerElementTarget,org.hibernate.validator.internal.metadata.location.ConstraintLocation,int)>: GC overhead limit exceeded
+
+> Task :run FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':run'.
+> Process 'command '/usr/lib/jvm/java-8-openjdk-amd64/bin/java'' finished with non-zero exit value 137
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD FAILED in 42m 22s
+25 actionable tasks: 13 executed, 12 up-to-date

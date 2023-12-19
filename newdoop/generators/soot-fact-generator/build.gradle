@@ -1,0 +1,51 @@
+plugins {
+    id 'application'
+    id 'groovy'
+    id 'java-library'
+}
+
+mainClassName = 'org.clyze.doop.soot.Main'
+
+repositories {
+    mavenCentral()
+    maven {
+        name "soot-snapshot"
+        url "https://soot-build.cs.uni-paderborn.de/nexus/repository/soot-snapshot"
+    }
+    maven {
+        name "soot-release"
+        url "https://soot-build.cs.uni-paderborn.de/nexus/repository/soot-release"
+    }
+}
+
+dependencies {
+    api project(path: ':generators:fact-generator-common', configuration: 'shadow')
+
+    // implementation "ca.mcgill.sable:soot:4.0.0"
+    implementation "org.soot-oss:soot:4.2.1"
+
+    testImplementation "org.codehaus.groovy:groovy-all:${groovyVersion}"  // Groovy
+    testImplementation "org.spockframework:spock-core:${spockVersion}"
+
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.73'
+    compile group: 'org.aspectj', name: 'aspectjweaver', version: '1.9.6'
+    runtime group: 'org.aspectj', name: 'aspectjweaver', version: '1.9.6'
+    compile group: 'org.dom4j', name: 'dom4j', version: '2.0.3'
+    implementation group: 'org.springframework', name: 'spring-webmvc', version: '5.2.12.RELEASE'
+}
+
+//fatJar already exists
+fatJar {
+    manifest {
+        attributes 'Main-Class': mainClassName
+    }
+    from { configurations.compileClasspath.collect { it.directory ? it : zipTree(it) } }
+    with jar
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+}
+
+test {
+    useJUnitPlatform()
+}
+
+startScripts.dependsOn fatJar
